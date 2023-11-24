@@ -1,2 +1,55 @@
-@import './common';
-@import './example';
+@import './utils/hidden';
+@import './utils/mixin';
+@import './utils/vars';
+
+@import './base/common';
+@import './base/reset';
+
+@import './components/btn';
+@import './components/container';
+@import './components/section';
+
+// ****************************************
+
+@import './layouts/header';
+
+@import './layouts/home-page/hero';
+@import './layouts/home-page/categories';
+@import './layouts/home-page/feedback';
+@import './layouts/home-page/our-projects';
+@import './layouts/home-page/youtube-video';
+
+@import './layouts/our-works/hero';
+@import './layouts/our-works/portfolio';
+
+@import './layouts/board/hero';
+@import './layouts/board/products';
+
+@import './layouts/contacts/hero';
+@import './layouts/contacts/map';
+
+@import './layouts/about-us/hero';
+@import './layouts/about-us/about-us';
+@import './layouts/about-us/our-clients';
+
+@import './layouts/blog/hero';
+@import './layouts/blog/portfolio';
+
+@import './layouts/basket/product';
+@import './layouts/basket/work-exemples';
+@import './layouts/basket/delivery';
+@import './layouts/basket/turnkey';
+@import './layouts/basket/popular';
+
+@import './layouts/about-board/hero';
+@import './layouts/about-board/about-board';
+@import './layouts/about-board/stages';
+@import './layouts/about-board/ecological';
+@import './layouts/about-board/finishing';
+
+@import './layouts/footer-home-page';
+@import './layouts/footer';
+
+// ****************************************
+
+@import './modal/modal';
