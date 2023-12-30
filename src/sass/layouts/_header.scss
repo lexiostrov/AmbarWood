@@ -1,3 +1,7 @@
+.header {
+  position: relative;
+}
+
 .container__header {
   position: relative;
   display: flex;
@@ -14,53 +18,53 @@
   display: block;
   width: 93px;
   height: 93px;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .navigation__list {
-  margin-top: 100px;
-  //   display: none;
+  display: none;
 }
 
-.navigation--katalog {
-  position: relative;
-}
-
-.navigation--katalog:hover .navigation__katalogList {
-  display: block;
-}
-
-// .navigation__katalog {
+// .navigation--katalog {
+//   position: relative;
 // }
 
-// .navigation__katalog:hover .navigation__katalogList {
+// .navigation--katalog:hover .navigation__katalogList {
 //   display: block;
 // }
 
-.navigation__katalogList {
-  position: absolute;
-  top: 17px;
-  left: 14px;
-  display: none;
-  background-color: rgb(222, 184, 135);
-}
+// .navigation__katalogList {
+//   position: absolute;
+//   top: 17px;
+//   left: 14px;
+//   display: none;
+//   background-color: rgb(222, 184, 135);
+// }
 
 .navigation__katalogItem {
   width: 286;
 }
 
 .headerWrapContacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .headerContacts__phone {
   display: block;
   margin-bottom: 3px;
+
+  font-weight: 500;
   font-size: 14px;
+
+  color: #222222;
 }
 
 .headerContacts__city {
   font-weight: 700;
   font-size: 12px;
+
+  color: #c0c0c0;
 }
 
 .headerWrapBtn {
@@ -76,4 +80,87 @@
 .headerBtn__textMenu {
   font-family: 'Montserrat', sans-serif;
   font-size: 10px;
+}
+
+// *************************************
+
+.mobMenu {
+  position: fixed;
+  top: 86.9px;
+  left: 0;
+
+  padding: 38px 20px;
+
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.mobMenu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+
+  margin-bottom: 33px;
+}
+
+.mobMenu__item {
+  //   width: 183px;
+}
+
+.mobMenu--katalog:hover .mobMenu__wrapKatalogList {
+  display: block;
+}
+
+.mobMenu__link {
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #222222;
+}
+
+.katalog {
+  display: flex;
+  align-items: center;
+}
+
+.mobMenu__wrapKatalogList {
+  display: none;
+}
+
+.mobMenu__katalogList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  margin-top: 17px;
+  margin-bottom: 26px;
+  margin-left: 34px;
+}
+
+.mobMenu__katalogLink {
+  font-size: 14px;
+  font-weight: 500;
+
+  color: #222222;
+}
+
+.mobMenu__svg {
+  margin-left: 10px;
+}
+
+.mobMenu__contactList {
+  display: flex;
+  gap: 18px;
+}
+
+.mobMenu__contactLink {
+  display: block;
+
+  height: 23px;
+}
+
+.svgYoutube {
+  fill: transparent;
+  stroke: black;
 }
