@@ -36,6 +36,8 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
   width: 100%;
 }
 
@@ -50,23 +52,41 @@ button {
   width: 35px;
   height: 16px;
 }
+@media screen and (min-width: 1440px) {
+  .headerBtn {
+    display: none;
+  }
+}
+
+.consultationBtn {
+  display: none;
+}
+@media screen and (min-width: 1440px) {
+  .consultationBtn {
+    display: block;
+    padding: 12px 55px 14px 53px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    border-radius: 5px;
+  }
+}
 
 .container {
   width: 100%;
-  padding-left: 12px;
-  padding-right: 21px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin: 0 auto;
   outline: 1px solid crimson;
 }
 @media screen and (min-width: 390px) {
   .container {
-    width: 390px;
+    width: 370px;
   }
 }
 @media screen and (min-width: 1440px) {
   .container {
-    padding: 0 20px;
-    width: 1393px;
+    width: 1220px;
   }
 }
 
@@ -81,22 +101,94 @@ button {
   padding-top: 28px;
   padding-bottom: 19px;
 }
+@media screen and (min-width: 1440px) {
+  .container__header {
+    padding: 0 10px;
+    width: 1373px;
+  }
+}
 
 .logo {
   position: absolute;
   top: -1px;
-  left: 0;
+  left: 12px;
   display: block;
   width: 93px;
   height: 93px;
+}
+@media screen and (min-width: 1440px) {
+  .logo {
+    top: 7px;
+    left: 0;
+  }
 }
 
 .navigation__list {
   display: none;
 }
+@media screen and (min-width: 1440px) {
+  .navigation__list {
+    display: flex;
+    gap: 44px;
+  }
+}
+
+.navigation--katalog {
+  position: relative;
+}
+
+.navigation--katalog:hover .navigation__katalogList {
+  display: block;
+}
+
+.navigation__link {
+  display: block;
+  padding-top: 45px;
+  padding-bottom: 40px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.navigation__svg {
+  margin-left: 4px;
+  width: 6px;
+  height: 3px;
+}
+
+.navigation__katalogList {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  padding-top: 27px;
+  padding-bottom: 22px;
+  background-color: #c19d7a;
+  border-radius: 0 20px 20px 20px;
+  min-width: 304px;
+  display: none;
+}
 
 .navigation__katalogItem {
-  width: 286;
+  display: flex;
+  align-items: center;
+  padding-left: 18px;
+  min-height: 29px;
+}
+
+.navigation__katalogItem:hover {
+  background-color: #f7f3ef;
+}
+
+.navigation__katalogLink {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: white;
+}
+
+.navigation__katalogLink:hover,
+.navigation__katalogItem:hover .navigation__katalogLink {
+  color: #222222;
 }
 
 .headerWrapContacts {
@@ -104,18 +196,28 @@ button {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 1440px) {
+  .headerWrapContacts {
+    align-items: flex-start;
+    margin-top: 37px;
+    margin-bottom: 31px;
+    margin-left: 96px;
+  }
+}
 
 .headerContacts__phone {
   display: block;
   margin-bottom: 3px;
   font-weight: 500;
   font-size: 14px;
+  line-height: 1.2;
   color: #222222;
 }
 
 .headerContacts__city {
   font-weight: 700;
   font-size: 12px;
+  line-height: 1.2;
   color: #c0c0c0;
 }
 
@@ -132,6 +234,18 @@ button {
 .headerBtn__textMenu {
   font-family: "Montserrat", sans-serif;
   font-size: 10px;
+}
+@media screen and (min-width: 1440px) {
+  .headerBtn__textMenu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .consultationBtn__wrap {
+    margin-top: 31px;
+    margin-left: 39px;
+  }
 }
 
 .mobMenu {

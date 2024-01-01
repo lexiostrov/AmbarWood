@@ -5,4 +5,23 @@
   border-color: transparent;
   width: 35px;
   height: 16px;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.consultationBtn {
+  display: none;
+
+  @include desktop {
+    display: block;
+    padding: 12px 55px 14px 53px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+
+    border-radius: 5px;
+  }
 }
