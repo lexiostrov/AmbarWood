@@ -9,45 +9,111 @@
 
   padding-top: 28px;
   padding-bottom: 19px;
+
+  @include desktop {
+    padding: 0 10px;
+    width: 1373px;
+  }
 }
 
 .logo {
   position: absolute;
   top: -1px;
-  left: 0;
+  left: 12px;
   display: block;
   width: 93px;
   height: 93px;
+
+  @include desktop {
+    top: 7px;
+    left: 0;
+  }
 }
 
 .navigation__list {
   display: none;
+
+  @include desktop {
+    display: flex;
+    gap: 44px;
+  }
 }
 
-// .navigation--katalog {
-//   position: relative;
-// }
+.navigation--katalog {
+  position: relative;
+}
 
-// .navigation--katalog:hover .navigation__katalogList {
-//   display: block;
-// }
+.navigation--katalog:hover .navigation__katalogList {
+  display: block;
+}
 
-// .navigation__katalogList {
-//   position: absolute;
-//   top: 17px;
-//   left: 14px;
-//   display: none;
-//   background-color: rgb(222, 184, 135);
-// }
+.navigation__link {
+  display: block;
+  padding-top: 45px;
+  padding-bottom: 40px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.navigation__svg {
+  margin-left: 4px;
+
+  width: 6px;
+  height: 3px;
+}
+
+.navigation__katalogList {
+  position: absolute;
+  top: 80px;
+  left: 0;
+
+  padding-top: 27px;
+  padding-bottom: 22px;
+
+  background-color: #c19d7a;
+  border-radius: 0 20px 20px 20px;
+  min-width: 304px;
+  display: none;
+}
 
 .navigation__katalogItem {
-  width: 286;
+  display: flex;
+  align-items: center;
+
+  padding-left: 18px;
+  min-height: 29px;
+}
+
+.navigation__katalogItem:hover {
+  background-color: #f7f3ef;
+}
+
+.navigation__katalogLink {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: white;
+}
+
+.navigation__katalogLink:hover,
+.navigation__katalogItem:hover .navigation__katalogLink {
+  color: #222222;
 }
 
 .headerWrapContacts {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include desktop {
+    align-items: flex-start;
+
+    margin-top: 37px;
+    margin-bottom: 31px;
+    margin-left: 96px;
+  }
 }
 
 .headerContacts__phone {
@@ -56,6 +122,7 @@
 
   font-weight: 500;
   font-size: 14px;
+  line-height: 1.2;
 
   color: #222222;
 }
@@ -63,6 +130,7 @@
 .headerContacts__city {
   font-weight: 700;
   font-size: 12px;
+  line-height: 1.2;
 
   color: #c0c0c0;
 }
@@ -80,6 +148,17 @@
 .headerBtn__textMenu {
   font-family: 'Montserrat', sans-serif;
   font-size: 10px;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.consultationBtn__wrap {
+  @include desktop {
+    margin-top: 31px;
+    margin-left: 39px;
+  }
 }
 
 // *************************************
@@ -105,7 +184,6 @@
 }
 
 .mobMenu__item {
-  //   width: 183px;
 }
 
 .mobMenu--katalog:hover .mobMenu__wrapKatalogList {
