@@ -1,0 +1,59 @@
+:root {
+    // тексты
+    --primaryTextColor: #222222;
+    --secondaryTextColor: #F8F3EF;
+    --accentColor: #D8A47A;
+    --secondaryAccentColor: #C38F65;
+    --titleAccentColor: #ACA095;
+    --footerTextColor: #99999D;
+    --fieldTextColor: #BCBCBC;
+    --hoverBtnTextColor: #ffffff;
+    --hoverTextColor: #C19D7A;
+    --policyTextDesctopColor: #8F8F8F;
+    --policyTextMobColor: #E6E6E6;
+    --policyTextModalColor: #636363;
+    --calculateMainTextColor: #000000;
+
+    // рамки
+    --borderListCategories: #EBEBEB;
+    --borderAccentColor: #E2AE80;
+    --borderEcology: 1px solid #399143;
+    --borderSlideColor: #E1DBD5;
+
+    // фоны
+    --bcgPopupMenu: #C19D7A;
+    --bcgColor: #F8F3EF;
+    --secondaryBcgColor: #34353D;
+    --bcgHpTransparentBtn: rgba(36, 36, 36, 0.46);
+
+    --boxShadowMap: 0px 0px 10px 0px rgba(0, 0, 0, 0.08);
+
+    // социалки
+    --youTubeTextBtnColor: #FFF2F2;
+    --youTubeAccentBtnColor: #CC1616;
+    --youTubeInsideCircleColor: rgba(255, 255, 255, 0.80);
+    --youTubeOutsideCircleColor: rgba(255, 255, 255, 0.40);
+    --vkAccentBtnColor: #144DA3;
+
+    --watsapBcgColor: #25D366;
+    --vkBcgColor: #2F6AC2;
+    --youTubeBcgColor: #EB2626;
+
+    // градиенты
+    --heroGrad: linear-gradient(100deg, rgba(37, 37, 44, 0.30) 1.74%, rgba(37, 37, 44, 0.17) 56.92%, rgba(37, 37, 44, 0.21) 97.51%);  
+    --hpCategoriesGrad: linear-gradient(342deg, rgba(34, 34, 34, 0.92) 3.68%, rgba(34, 34, 34, 0.00) 71.78%);
+    --hpOurProjGrad: linear-gradient(193deg, rgba(34, 34, 34, 0.00) 41.54%, rgba(34, 34, 34, 0.83) 96.33%);
+    --feedbackGrad: linear-gradient(98deg, rgba(37, 37, 44, 0.47) 4.13%, rgba(37, 37, 44, 0.80) 39.91%, rgba(37, 37, 44, 0.63) 99.59%);
+    --btnGradNorm: linear-gradient(90deg, #E2AE80 0.1%, #CC9872 99.91%);
+    --btnGradHover: linear-gradient(90deg, #F1C49C 0.1%, #D2A27E 99.91%);
+    --secondaryBtnGrad: linear-gradient(97deg, rgba(255, 255, 255, 0.00) 32.32%, rgba(255, 255, 255, 0.05) 70.17%, rgba(255, 255, 255, 0.39) 78.67%, rgba(255, 255, 255, 0.20) 85.86%, rgba(255, 255, 255, 0.00) 97.79%);
+    --ourWorksListGrad: linear-gradient(193deg, rgba(34, 34, 34, 0.15) 41.54%, rgba(34, 34, 34, 0.92) 96.33%);
+    --blogListGrad: linear-gradient(213deg, rgba(34, 34, 34, 0.15) 19.52%, rgba(34, 34, 34, 0.92) 92.18%);
+
+    // анимация
+    --timingFunction: 1s cubic-bezier(.08,.49,.93,.64);
+
+
+
+    
+}
