@@ -1,4 +1,4 @@
-const menuBtnEl = document.querySelector('.headerBtn');
+const menuBtnEl = document.querySelector('.headerBtnMenu');
 const mobMenuEl = document.querySelector('.mobMenu');
 
 menuBtnEl.addEventListener('click', onClickMenu);

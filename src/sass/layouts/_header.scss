@@ -55,6 +55,8 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 1.2;
+
+  color: var(--primaryTextColor);
 }
 
 .navigation__svg {
@@ -72,7 +74,7 @@
   padding-top: 27px;
   padding-bottom: 22px;
 
-  background-color: #c19d7a;
+  background-color: var(--bcgPopupMenu);
   border-radius: 0 20px 20px 20px;
   min-width: 304px;
   display: none;
@@ -86,20 +88,26 @@
   min-height: 29px;
 }
 
+.navigation__katalogItem:hover,
+.navigation__katalogItem:hover .navigation__katalogLink {
+  transition: color var(--timingFunction2),
+    background-color var(--timingFunction2);
+}
+
 .navigation__katalogItem:hover {
-  background-color: #f7f3ef;
+  background-color: var(--katalogMenuItem);
 }
 
 .navigation__katalogLink {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.2;
-  color: white;
+  color: var(--katalogMenuLink);
 }
 
 .navigation__katalogLink:hover,
 .navigation__katalogItem:hover .navigation__katalogLink {
-  color: #222222;
+  color: var(--primaryTextColor);
 }
 
 .headerWrapContacts {
@@ -124,7 +132,7 @@
   font-size: 14px;
   line-height: 1.2;
 
-  color: #222222;
+  color: var(--primaryTextColor);
 }
 
 .headerContacts__city {
@@ -132,7 +140,7 @@
   font-size: 12px;
   line-height: 1.2;
 
-  color: #c0c0c0;
+  color: var(--headerContactsCity);
 }
 
 .headerWrapBtn {
@@ -164,15 +172,20 @@
 // *************************************
 
 .mobMenu {
-  position: fixed;
+  position: absolute;
   top: 86.9px;
   left: 0;
 
   padding: 38px 20px;
 
-  width: 100vw;
+  width: 370px;
   height: 100vh;
+  background-color: var(--bcgColor);
   overflow: scroll;
+
+  @include desktop {
+    display: none;
+  }
 }
 
 .mobMenu__list {
@@ -194,7 +207,7 @@
   font-size: 16px;
   font-weight: 700;
 
-  color: #222222;
+  color: var(--primaryTextColor);
 }
 
 .katalog {
@@ -220,7 +233,7 @@
   font-size: 14px;
   font-weight: 500;
 
-  color: #222222;
+  color: var(--primaryTextColor);
 }
 
 .mobMenu__svg {

@@ -1,3 +1,19 @@
+.containerHeader {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+  outline: 1px solid crimson;
+
+  @include mobile {
+    width: 378px;
+  }
+
+  @include desktop {
+    width: 1373px;
+  }
+}
+
 .container {
   width: 100%;
   padding-left: 10px;
